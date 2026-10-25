@@ -1,3 +1,7 @@
+> 이 저장소는 1차 팀 프로젝트의 Admin 구성 요소를 소개하는 문서입니다.
+> Admin 관리자 페이지 개발은 다른 팀원이 담당했으며, 김규현은 Service 개발을 전담했습니다.
+> [Admin 원본](https://github.com/ehdgus4026-tech/admin) · [김규현 담당 Service](https://github.com/kyu0318/service)
+
 # 🛠️ 재난 대피소 관리자 웹 애플리케이션
 
 > 재난 유형별 대피소 데이터를 관리하고, 회원 및 게시글 기능을 제공하는 Spring Boot 기반 웹 애플리케이션입니다.
