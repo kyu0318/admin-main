@@ -1,4 +1,4 @@
-> 이 저장소는 1차 팀 프로젝트의 Admin 구성 요소를 소개하는 문서입니다.
+> 1차 팀 프로젝트의 Admin 구성 요소 소개 문서
 > Admin 관리자 페이지 개발은 다른 팀원이 담당했으며, 김규현은 Service 개발을 전담했습니다.
 > [Admin 원본](https://github.com/ehdgus4026-tech/admin) · [김규현 담당 Service](https://github.com/kyu0318/service)
 
