@@ -2,23 +2,19 @@
 
 1차 팀 프로젝트의 재난 유형별 대피소·회원·게시글 관리 웹 애플리케이션
 
-**Admin 개발: 다른 팀원(ehdgus4026-tech). 김규현 담당: Service 개발 전담 및 Docker Host 구성.**
+사용자용 Service와 함께 구성한 관리용 애플리케이션. 대피소 데이터 관리와 수집·적재 작업, 회원·게시판 기능 포함
 
-이 저장소는 팀 결과물을 함께 살펴보기 위한 Admin 소스 복사본입니다. 김규현의 Admin 개발 실적으로 기재하지 않습니다.
+[Service 코드](https://github.com/kyu0318/service) · [1차 프로젝트 소개](https://road-bloom-792.notion.site/1-3e110d3ee8d380f89984c41d0ea02594) · [Docker Host 구축 기록](https://road-bloom-792.notion.site/1-Docker-Host-3c910d3ee8d380e780f7c6db82d112a8) · [Admin 원본](https://github.com/ehdgus4026-tech/admin)
 
-[팀원 Admin 원본](https://github.com/ehdgus4026-tech/admin) · [김규현 담당 Service](https://github.com/kyu0318/service) · [1차 프로젝트 소개](https://road-bloom-792.notion.site/1-3e110d3ee8d380f89984c41d0ea02594) · [Docker Host 구축 기록](https://road-bloom-792.notion.site/1-Docker-Host-3c910d3ee8d380e780f7c6db82d112a8)
+## 프로젝트 전체 구성
 
-## 팀 프로젝트 구성과 역할
+| 구성 | 기능·구성 |
+| --- | --- |
+| Service | 사용자 지도 화면, Kakao Maps 연동, 대피소 조회 API, 기존 재난 유형 탭 API |
+| Admin · 이 저장소 | 회원가입·로그인, 대피소 관리, 게시판, 데이터 수집·적재 연계 |
+| Docker Host | 데이터 처리용 호스트, DB 연결, 작업 컨테이너·Cron 설정 |
 
-| 구성 | 담당 | 범위 |
-| --- | --- | --- |
-| Service | 김규현 | 사용자 지도 화면, Kakao Maps 연동, 대피소 조회 API, 기존 재난 유형 탭 API |
-| Admin | 다른 팀원 | 회원가입·로그인, 대피소 관리, 게시판, 데이터 수집·적재 연계 |
-| Docker Host | 김규현 | 호스트 구성, 해당 호스트의 DB 연결, 데이터 처리 컨테이너·Cron 설정 기록 |
-
-Service와 Admin은 같은 팀 프로젝트의 별도 애플리케이션. 개인 기여와 팀 전체 구현 범위를 구분
-
-## 코드에서 확인한 기능
+## Admin 주요 기능
 
 | 기능 | 내용 | 주요 근거 |
 | --- | --- | --- |
@@ -57,7 +53,7 @@ config/.env.example      Python용 비공개 환경 설정 예시
 - 방식: 기존 `admin-main` 이력을 유지한 파일 복사. GitHub Fork·저장소 소유권 이전·원본 Git 이력 병합에 해당하지 않음
 - 제외: `target/`, `nohup.out`, 실제 `config/.env`, 빈 임시 텍스트 파일
 - 공개 설정 정리: DB 비밀번호 기본값 제거, 일부 Python 스크립트의 고정 DB 비밀번호를 환경변수 참조로 변경, `.env.example`·`.gitignore` 정리
-- 원본 개발자와 기능 구현 범위 유지. 복사·공개 설정·문서 편집 커밋과 원본 개발 기여를 구분
+- 출처: 팀원 저장소 `ehdgus4026-tech/admin`의 독립 보존본. 복사·공개 설정·문서 편집 이력과 원본 개발 이력을 구분
 
 ## 실행 준비
 
